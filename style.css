@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Martian+Mono&display=monospace');
+
+html {    
+    box-sizing: border-box;
+    font-family: 'Martian Mono', monospace;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    background-image: linear-gradient(to right, green, blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid white;
+    border-radius: 5px;        
+    width: 40vw;
+    height: 60vh;
+}
+
+.display {    
+    width: 100%;
+    height: 10vh;
+    font-size: 3rem;    
+    text-align: end;
+    background-color: azure;
+}
+
+.calculator button, .display {
+    font-family: 'Martian Mono', monospace;
+}
+
+.calculator button {
+    height: 10vh;
+    width: 10vw;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid azure;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: lightblue;
+    box-shadow: inset 0 0 0 0.5px;
+}
+.calculator button:hover{
+    background-color: whitesmoke;
+}
+
+.equals {
+    background-color: indigo;
+    color: white;
+}
+
+.button-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
